@@ -25,11 +25,6 @@ body{
   font-style: normal;
 }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
 .wrapper{
     width: 90%;
     max-width: 34.37em;
@@ -53,4 +48,53 @@ body{
     width: inherit;
     top: 0;
     padding: 0;
+}
+#spinButton{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  background:#dbbb05;
+  height: 26%;
+  width: 26%;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  border-radius: 50%;
+  letter-spacing: .1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+}
+#finalValue{
+ font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  font-style: normal;
+  text-align: center;
+
+}
+@keyframes rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+img{
+position: absolute;
+width:4em;
+top:45%;
+right: -8%;
+}
+@media (max-width:769px){
+ .wrapper{
+  font-size: 12px;
+ }
+ img{
+  right: -5%;
+ }
 }
